@@ -1,0 +1,6 @@
+./src
+./kubeaccess
+./vscode
+tsconfig.json
+package-lock.json
+yarn.lock

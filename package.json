@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf build && tsc",
-    "start": "node build/app.js"
+    "start": "node build/app.js",
+    "push": "docker build -t cranna/kubeaccess:1.0 -t cranna/kubeaccess:latest . && docker push cranna/kubeaccess:1.0 && docker push cranna/kubeaccess:latest"
   },
   "repository": {
     "type": "git",

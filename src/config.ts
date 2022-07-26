@@ -1,7 +1,6 @@
 export class IConfig {
     public KA_CHECK_CRON?: string = "*/30 * * * *";
-    public KA_CHECK_DELTA_DAY_BEFORE_EXPIRE?: number = 14;
-    public 
+    public KA_CHECK_DELTA_DAY_BEFORE_EXPIRE?: string = "14";
 }
 
 export async function getConfig(): Promise<IConfig> {

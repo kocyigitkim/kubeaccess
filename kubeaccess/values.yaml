@@ -1,0 +1,12 @@
+replicaCount: 1
+
+image:
+  repository: cranna/kubeaccess:1.0
+  pullPolicy: IfNotPresent
+
+podAnnotations: {}
+labels: {}
+
+env:
+  KA_CHECK_CRON: "*/30 * * * *"
+  KA_CHECK_DELTA_DAY_BEFORE_EXPIRE: "14"
